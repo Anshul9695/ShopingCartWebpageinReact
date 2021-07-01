@@ -1,0 +1,309 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+
+.headers{
+  height: 30px;
+  width: 95%;
+  margin-left: 20px;
+  border-bottom: 1px solid peachpuff;
+ 
+}
+
+.phonel{
+  width: 300px;
+  color: black;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: left;
+  float: left;
+}
+.gmaill{
+  width: 500px;
+  color: black;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: left;
+  float: left;
+}
+.fafa{
+  width: 350px;
+  color: black;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align:left;
+  float: left;
+}
+
+
+nav{
+  width: 90%;
+  height: 60px;
+  line-height: 20px;
+  padding: 0  40px;
+ border-bottom: 1px solid bisque;
+  display: flex;
+  font-size: 20px;
+  color:white;
+  z-index: 9999;
+  
+}
+.left{
+  width: 50%;
+  text-align: left;
+list-style: none;
+}
+.indian{
+  color: orange;
+  font-size: 23px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+
+.right{
+  width: 30%;
+  text-align: right;
+  list-style: none;
+}
+.card{
+  color:black;
+  margin-right: 50px;
+  font-size: 25px;
+ 
+}
+.cardcount{
+  height: 50px;
+  width: 50px;
+line-height: 40px;
+padding: 5px;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+/* helpers classes */
+.container{
+  width: 90%;
+  padding: 0 100px;
+}
+
+/* Banners style */
+header{
+  width: 100%;
+  height: 250px;
+ background:url("./images/6.jpg");
+ margin-top: 10px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color:rgb(12, 236, 31);
+}
+
+
+
+/* our product style */
+.heading{
+  font-size: 20px;
+  color:orange;
+}
+
+/* products styles  */
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product{
+  width: 23%;
+  padding: 0 12px;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+.hot{
+  position:absolute;
+  top:0;
+  background:orangered;
+  padding: 5px 20px;
+  color:white;
+}
+.new{
+  position:absolute;
+  top:0;
+  background:greenyellow;
+  padding: 5px 20px;
+  color:white;
+}
+.branded{
+  position:absolute;
+  top:0;
+  background:red;
+  padding: 5px 20px;
+  color:white;
+}
+
+
+
+.product-image{
+  width: 100%;
+  height: 200px;
+}
+.product-image img{
+  width: 100%;
+}
+.product-details{
+  padding: 15px 10px;
+  text-align: center;
+  background: white;
+}
+.product-name{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.product-price{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 12px 0;
+}
+.add-to-card{
+  background:green;
+  padding: 10px 20px;
+  width:100%;
+  color:white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  cursor:pointer;
+}
+/* cart style */
+
+.cart-container{
+width: 100%;
+margin-top: 40px;
+padding: 0 100px;
+display:flex;
+flex-wrap:wrap;
+align-items: flex-start;
+}
+.cart-details{
+  width:75%;
+  border:1px solid #fafafa;
+  border-radius: 5px;
+}
+.cart{
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  
+}
+.cart-image{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cart-image img{
+  width: 100%;
+  height: 100%;
+}
+.cart-product-name{
+  display: inline-block;
+  width:150px;
+  padding: 0 15px;
+  font-weight:bold;
+  font-size: 14px;
+}
+.cart-product-price{
+  width:120px;
+  padding:0 15px;
+  text-align: center;
+  font-weight: bold;
+  color:orangered;
+}
+.inc{
+  display: inline-block;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border:1px solid orangered;
+  font-size: 14px;
+  color:orange;
+  border-radius: 3px;
+}
+.product-quantity{
+  display: inline-block;
+  padding: 0 15px;
+
+}
+.dec{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border:1px solid rgb(206, 177, 167);
+  font-size: 14px;
+  color:orange;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.product-total-price{
+  display:inline-block;
+  width: 170px;
+  padding: 0 15px;
+  text-align: center;
+}
+.delete-product{
+  border: none;
+  color: red;
+  cursor: pointer;
+}
